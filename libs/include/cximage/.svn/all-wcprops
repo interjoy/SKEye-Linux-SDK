@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include
+END
+ximage.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/ximage.h
+END
+ximadef.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/ximadef.h
+END
+ximacfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/ximacfg.h
+END
+xiofile.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/xiofile.h
+END
+xmemfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/xmemfile.h
+END
+xfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/develop/BJCA-ESS/!svn/ver/2608/4Code/01Trunk/ClientSeal/BJCAEsealLib/BJCAEsealLibCode/CxImage/include/xfile.h
+END
