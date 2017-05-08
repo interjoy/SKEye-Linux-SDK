@@ -48,13 +48,13 @@ JsonData = SKEyeSDK_ImagePath(Image_Url, service_name);
 //路径
 JsonData = SKEyeSDK_ImagePath(PATH, service_name);
 //URL(回调)
-SKEyeSDK_ImagePath_CallBack(Image_Url, service_name, _JsonData);
+SKEyeSDK_ImagePath(Image_Url, service_name, _JsonData);
 //路径(回调)
-SKEyeSDK_ImagePath_CallBack(PATH, service_name, _JsonData);
+SKEyeSDK_ImagePath(PATH, service_name, _JsonData);
 //rgb 
 JsonData = SKEyeSDK_Image(data, With, Height, service_name);
 //rgb 回调
-SKEyeSDK_Image_CallBack(data, With, Height, service_name, _JsonData);
+SKEyeSDK_Image(data, With, Height, service_name, _JsonData);
 ```
 ###  SDK问题反馈
 - SKEye开放平台QQ群：617518775
