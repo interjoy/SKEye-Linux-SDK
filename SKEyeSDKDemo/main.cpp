@@ -78,12 +78,12 @@ int main()
 {
 	char Api_Key[] = "466da4221010f834191e2da500b4a23b";
 	char Api_Secret[] = "ddc8bd498e7c29f929862ab7391a7b89";
-	char Image_Url[] = "http://pic.58pic.com/58pic/12/92/83/39j58PIChF6.jpg";
+	char Image_Url[] = "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=444806911,2342807153&fm=23&gp=0.jpg";
 	char service_name_ob[] = "objects";
 	char service_name_fr[] ="fruits";
 	char PATH[1024]="object3.jpg";
 	SKEyeSDK_Init(Api_Key, Api_Secret);
-	SKEyeSDK_ImagePath_Function(Image_Url, service_name_fr);
+	SKEyeSDK_ImagePath_Function(Image_Url, service_name_ob);
 	SKEyeSDK_ImagePath_CallBackFunction(PATH, service_name_ob);
 	SKEyeSDK_Image_Function(640, 480, service_name_ob);
 	SKEyeSDK_Image_CallBackFunction(640, 480, service_name_ob);
