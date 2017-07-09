@@ -43,6 +43,7 @@ public:
 	{
 		if (!m_fp) return 0;
 		return fread(buffer, size, count, m_fp);
+		
 	}
 //////////////////////////////////////////////////////////
 	virtual size_t	Write(const void *buffer, size_t size, size_t count)

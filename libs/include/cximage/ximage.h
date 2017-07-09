@@ -126,7 +126,7 @@ CMAX_IMAGE_FORMATS
 /////////////////////////////////////////////////////////////////////////////
 class DLL_EXP CxImage
 {
-//extensible information collector
+//extensible information collector/usr/bin/ld: 找不到  不可识别的文件格式
 typedef struct tagCxImageInfo {
 	DWORD	dwEffWidth;			///< DWORD aligned scan line width
 	BYTE*	pImage;				///< THE IMAGE BITS
@@ -402,6 +402,7 @@ public:
 
 	// file operations
 #if CXIMAGE_SUPPORT_DECODE
+
 /** \addtogroup Decode */ //@{
 #ifdef WIN32
 	//bool Load(LPCWSTR filename, DWORD imagetype=0);
@@ -413,6 +414,7 @@ public:
 	bool Decode(FILE * hFile, DWORD imagetype);
 	bool Decode(CxFile * hFile, DWORD imagetype);
 	bool Decode(BYTE * buffer, DWORD size, DWORD imagetype);
+	
 //@}
 #endif //CXIMAGE_SUPPORT_DECODE
 
@@ -643,6 +645,5 @@ protected:
 	CxImage**			pLayers; //generic layers
 //@}
 };
-
 ////////////////////////////////////////////////////////////////////////////
 #endif // !defined(__CXIMAGE_H)

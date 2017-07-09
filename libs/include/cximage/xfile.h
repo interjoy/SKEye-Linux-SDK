@@ -49,9 +49,6 @@
 
 #include "ximadef.h"
 
-
-//# define DLL_EXP
-
 class DLL_EXP CxFile
 {
 public:

@@ -38,18 +38,16 @@
  #define	CXIMAGE_SUPPORT_WINDOWS 0
 #endif
 
-
 #ifndef WIN32
  #undef CXIMAGE_SUPPORT_WINDOWS
  #define CXIMAGE_SUPPORT_WINDOWS 0
 #endif
-#if 0
+
 #ifndef min
 #define min(a,b) (((a)<(b))?(a):(b))
 #endif
 #ifndef max
 #define max(a,b) (((a)>(b))?(a):(b))
-#endif
 #endif
 
 #ifndef PI
@@ -82,17 +80,27 @@ typedef struct tagcomplex {
 
 
 #ifndef WIN32
-
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
+#ifdef __x86_64__
+typedef unsigned int   COLORREF;
+typedef unsigned int   DWORD;
+typedef  int           LONG;
+
+#elif __i386__
+typedef unsigned long  COLORREF;
+typedef unsigned long DWORD;
+typedef  long          LONG;
+#endif
+typedef unsigned long  uint64;  
 typedef unsigned char  BYTE;
 typedef unsigned short WORD;
-typedef unsigned long  DWORD;
+//typedef unsigned long  DWORD;
 typedef unsigned int   UINT;
 
-typedef DWORD          COLORREF;
+
 typedef unsigned int   HANDLE;
 typedef void*          HRGN;
 
@@ -115,16 +123,16 @@ typedef void*          HRGN;
 
 typedef struct tagRECT
 {
-	long    left;
-	long    top;
-	long    right;
-	long    bottom;
+	LONG    left;
+	LONG    top;
+	LONG    right;
+	LONG    bottom;
 } RECT;
 
 typedef struct tagPOINT
 {
-	long  x;
-	long  y;
+	LONG  x;
+	LONG  y;
 } POINT;
 
 typedef struct tagRGBQUAD {
@@ -138,14 +146,14 @@ typedef struct tagRGBQUAD {
 
 typedef struct tagBITMAPINFOHEADER{
 	DWORD      biSize;
-	long       biWidth;
-	long       biHeight;
+	LONG       biWidth;
+	LONG       biHeight;
 	WORD       biPlanes;
 	WORD       biBitCount;
 	DWORD      biCompression;
 	DWORD      biSizeImage;
-	long       biXPelsPerMeter;
-	long       biYPelsPerMeter;
+	LONG       biXPelsPerMeter;
+	LONG       biYPelsPerMeter;
 	DWORD      biClrUsed;
 	DWORD      biClrImportant;
 } BITMAPINFOHEADER;
