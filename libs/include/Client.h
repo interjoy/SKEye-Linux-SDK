@@ -12,8 +12,12 @@ char *SKEyeSDK_Image(unsigned char *ImageData, unsigned int ImageWide, unsigned 
 
 
 typedef void(*CallBackImageResult)(char *ImageResult);
-//Url访问 图片路径访问 回调方式
+//Url访问 图片路径访问 回调方式(无ImageId)
 void SKEyeSDK_ImagePath(char *UrlOrPath, char *ServiceName, CallBackImageResult ImageResult);
-//图片+宽+高访问 回调方式
+//Url访问 图片路径访问 回调方式
+void SKEyeSDK_ImagePath(int ImageId, char *UrlOrPath, char *ServiceName, CallBackImageResult ImageResult);
+//图片+宽+高访问 回调方式(无ImageId)
 void SKEyeSDK_Image(unsigned char *ImageData, unsigned int ImageWide, unsigned int ImageHight, char *ServiceName, CallBackImageResult ImageResult);
+//图片+宽+高访问 回调方式
+void SKEyeSDK_Image(int ImageId, unsigned char *ImageData, unsigned int ImageWide, unsigned int ImageHight, char *ServiceName, CallBackImageResult ImageResult);
 #endif
