@@ -1,6 +1,9 @@
 # SKEye-Linux-SDK
 SKEye-Linux-SDK for Object Recognition Service 
 ###  更新日志
+v1.0.4
+- 修改优化网络部分
+
 v1.0.3
 - 扩充图像识别接口，加入ImageId参数，方便确认请求顺序和返回顺序是否一致
 
